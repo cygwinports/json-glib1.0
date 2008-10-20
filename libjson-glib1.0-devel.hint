@@ -1,0 +1,7 @@
+category: Gnome
+requires: cygwin glib2-devel libjson-glib1.0_0
+external-source: json-glib1.0
+sdesc: "GObject JSON parser library (libdevel)"
+ldesc: "JSON-GLib is a GObject library providing serialization and 
+deserialization support for the JavaScript Object Notation (JSON) 
+format described by RFC 4627."

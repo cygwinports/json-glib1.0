@@ -1,0 +1,5 @@
+category: _source
+sdesc: "GObject JSON parser library (source)"
+ldesc: "JSON-GLib is a GObject library providing serialization and 
+deserialization support for the JavaScript Object Notation (JSON) 
+format described by RFC 4627."
