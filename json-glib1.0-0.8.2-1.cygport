@@ -1,0 +1,12 @@
+ORIG_PN="json-glib"
+inherit gnome2
+
+DESCRIPTION="GLib JSON manipulation library"
+HOMEPAGE="http://live.gnome.org/JsonGlib"
+
+PATCH_URI="0.6.2-no-undefined.patch"
+
+PKG_NAMES="${PN} lib${PN}_0 lib${PN}-devel gobject-introspection-Json1.0"
+libjson_glib1_0_0_CONTENTS="usr/bin/*-1.0-0.dll usr/share/doc/"
+libjson_glib1_0_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/"
+gobject_introspection_Json1_0_CONTENTS="usr/*/gir*1.0/Json-1.0.*"

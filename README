@@ -5,23 +5,24 @@ deserialization support for the JavaScript Object Notation (JSON)
 format described by RFC 4627.
 
 Runtime requirements:
-  cygwin-1.7.0-43
-  libgcc1-4.3.2-2
-  libglib2.0_0-2.20.0-1
+  cygwin-1.7.0-62
+  libgcc1-4.3.4-1
+  libglib2.0_0-2.22.2-1
 
 Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.63-10
-  automake1.10-1.10.1-10
-  binutils-20080624-2
-  cygport-0.9.6-1
-  gawk-3.1.6-2
-  gcc4-core-4.3.2-2
-  gnome-common-2.24.0-1
+  automake1.11-1.11-10
+  binutils-2.19.51-1
+  cygport-0.9.10-1
+  gawk-3.1.7-1
+  gcc4-core-4.3.4-1
+  gnome-common-2.28.0-1
+  gobject-introspection-0.6.5-2
   gtk-doc-1.11-2
-  libtool-2.2.7a-1
+  libtool-2.2.7a-14
   make-3.81-2
-  pkg-config-0.23a-2
+  pkg-config-0.23b-10
   sed-4.1.5-2
 
 Canonical website:
@@ -33,72 +34,24 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack json-glib1.0-0.6.2-X-src.tar.bz2
+  unpack json-glib1.0-0.8.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./json-glib1.0-0.6.2-X.cygport all
+  cygport ./json-glib1.0-0.8.2-X.cygport all
 
 This will create:
-  /usr/src/json-glib1.0-0.6.2-X-src.tar.bz2
-  /usr/src/libjson-glib1.0-devel-0.6.2-X.tar.bz2
-  /usr/src/libjson-glib1.0_0-0.6.2-X.tar.bz2
+  /usr/src/gobject-introspection-Json1.0-0.8.2-X-src.tar.bz2
+  /usr/src/json-glib1.0-0.8.2-X-src.tar.bz2
+  /usr/src/libjson-glib1.0-devel-0.8.2-X.tar.bz2
+  /usr/src/libjson-glib1.0_0-0.8.2-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary packages:
-
-(libjson-glib1.0_0)
-  /usr/bin/cygjson-glib-1.0-0.dll
-  /usr/share/doc/json-glib1.0/AUTHORS
-  /usr/share/doc/json-glib1.0/COPYING
-  /usr/share/doc/json-glib1.0/ChangeLog
-  /usr/share/doc/json-glib1.0/INSTALL
-  /usr/share/doc/json-glib1.0/NEWS
-  /usr/share/doc/json-glib1.0/README
-
-(libjson-glib1.0-devel)
-  /usr/include/json-glib-1.0/json-glib/json-enum-types.h
-  /usr/include/json-glib-1.0/json-glib/json-generator.h
-  /usr/include/json-glib-1.0/json-glib/json-glib.h
-  /usr/include/json-glib-1.0/json-glib/json-gobject.h
-  /usr/include/json-glib-1.0/json-glib/json-parser.h
-  /usr/include/json-glib-1.0/json-glib/json-types.h
-  /usr/include/json-glib-1.0/json-glib/json-version.h
-  /usr/lib/libjson-glib-1.0.dll.a
-  /usr/lib/libjson-glib-1.0.la
-  /usr/lib/pkgconfig/json-glib-1.0.pc
-  /usr/share/gtk-doc/html/json-glib/JsonGenerator.html
-  /usr/share/gtk-doc/html/json-glib/JsonParser.html
-  /usr/share/gtk-doc/html/json-glib/ch01.html
-  /usr/share/gtk-doc/html/json-glib/ch02.html
-  /usr/share/gtk-doc/html/json-glib/ch03.html
-  /usr/share/gtk-doc/html/json-glib/home.png
-  /usr/share/gtk-doc/html/json-glib/index.html
-  /usr/share/gtk-doc/html/json-glib/index.sgml
-  /usr/share/gtk-doc/html/json-glib/ix01.html
-  /usr/share/gtk-doc/html/json-glib/ix02.html
-  /usr/share/gtk-doc/html/json-glib/json-advanced.html
-  /usr/share/gtk-doc/html/json-glib/json-base.html
-  /usr/share/gtk-doc/html/json-glib/json-glib-GObject-integration.html
-  /usr/share/gtk-doc/html/json-glib/json-glib-JsonArray.html
-  /usr/share/gtk-doc/html/json-glib/json-glib-JsonNode.html
-  /usr/share/gtk-doc/html/json-glib/json-glib-JsonObject.html
-  /usr/share/gtk-doc/html/json-glib/json-glib-Versioning-information.html
-  /usr/share/gtk-doc/html/json-glib/json-glib.devhelp
-  /usr/share/gtk-doc/html/json-glib/json-glib.devhelp2
-  /usr/share/gtk-doc/html/json-glib/json-glib.html
-  /usr/share/gtk-doc/html/json-glib/json-streams.html
-  /usr/share/gtk-doc/html/json-glib/json-tools.html
-  /usr/share/gtk-doc/html/json-glib/left.png
-  /usr/share/gtk-doc/html/json-glib/license.html
-  /usr/share/gtk-doc/html/json-glib/right.png
-  /usr/share/gtk-doc/html/json-glib/style.css
-  /usr/share/gtk-doc/html/json-glib/up.png
-
-------------------
-
 Port Notes:
+
+----- version 0.8.2-1 -----
+Version bump.
 
 ----- version 0.6.2-10 -----
 Initial release for Cygwin 1.7.
