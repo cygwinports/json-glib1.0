@@ -41,7 +41,7 @@ Build instructions:
   cygport ./json-glib1.0-0.8.2-X.cygport all
 
 This will create:
-  /usr/src/gobject-introspection-Json1.0-0.8.2-X-src.tar.bz2
+  /usr/src/girepository-Json1.0-0.8.2-X-src.tar.bz2
   /usr/src/json-glib1.0-0.8.2-X-src.tar.bz2
   /usr/src/libjson-glib1.0-devel-0.8.2-X.tar.bz2
   /usr/src/libjson-glib1.0_0-0.8.2-X.tar.bz2
