@@ -4,7 +4,7 @@ inherit gnome2
 DESCRIPTION="GLib JSON manipulation library"
 HOMEPAGE="http://live.gnome.org/JsonGlib"
 
-PATCH_URI="0.6.2-no-undefined.patch"
+PATCH_URI="0.10.0-no-undefined.patch"
 
 PKG_NAMES="${PN} lib${PN}_0 lib${PN}-devel girepository-Json1.0"
 libjson_glib1_0_0_CONTENTS="usr/bin/*-1.0-0.dll usr/share/doc/"
