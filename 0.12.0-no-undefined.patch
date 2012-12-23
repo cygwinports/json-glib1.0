@@ -4,8 +4,8 @@
  
  libjson_glib_1_0_la_LIBADD = $(JSON_LIBS)
  libjson_glib_1_0_la_SOURCES = $(source_c) $(source_h) $(source_h_private) $(BUILT_SOURCES)
--libjson_glib_1_0_la_LDFLAGS = $(JSON_LT_LDFLAGS) $(GCOV_LDFLAGS) -export-dynamic -export-symbols-regex "^json.*" -rpath $(libdir)
-+libjson_glib_1_0_la_LDFLAGS = $(JSON_LT_LDFLAGS) $(GCOV_LDFLAGS) -export-dynamic -export-symbols-regex "^json.*" -rpath $(libdir) -no-undefined
+-libjson_glib_1_0_la_LDFLAGS = $(JSON_LT_LDFLAGS) $(JSON_GCOV_LDADD) -export-dynamic -export-symbols-regex "^json.*" -rpath $(libdir)
++libjson_glib_1_0_la_LDFLAGS = $(JSON_LT_LDFLAGS) $(JSON_GCOV_LDADD) -export-dynamic -export-symbols-regex "^json.*" -rpath $(libdir) -no-undefined
  
  jsonincludedir = $(includedir)/json-glib-1.0/json-glib
  jsoninclude_DATA = \
