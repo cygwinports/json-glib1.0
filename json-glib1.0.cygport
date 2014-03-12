@@ -2,7 +2,7 @@ ORIG_PN="json-glib"
 inherit gnome2
 
 NAME="json-glib1.0"
-VERSION=0.16.0
+VERSION=0.16.2
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GObject JSON parser library"
