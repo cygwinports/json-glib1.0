@@ -1,8 +1,8 @@
 ORIG_PN="json-glib"
-inherit gnome2
+inherit gnome.org meson
 
 NAME="json-glib1.0"
-VERSION=1.2.6
+VERSION=1.4.2
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GObject JSON parser library"
@@ -24,3 +24,12 @@ libjson_glib1_0_doc_CONTENTS="usr/share/gtk-doc/"
 girepository_Json1_0_CONTENTS="usr/*/gir*1.0/Json-1.0.*"
 
 DIFF_EXCLUDES=".gitignore"
+
+CYGMESON_ARGS="-Ddocs=true"
+
+src_install() {
+	cd ${S}
+	meson_install
+
+	find ${D}/usr/*/installed-tests -delete
+}
